@@ -1,0 +1,13 @@
+name: d
+on:
+  workflow_run:
+    workflows: ["c"]
+    branches: [main]
+    types: 
+      - completed
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "workflow D"
