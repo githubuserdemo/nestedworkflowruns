@@ -2,7 +2,6 @@ name: c
 on:
   workflow_run:
     workflows: ["b"]
-    branches: [main]
     types: 
       - completed
   
